@@ -1,0 +1,8 @@
+/* resets */
+@import '~normalize.css';
+
+/* styling variables */
+:root {
+    --bg-color: #D8D8D8;
+    --bg-text: #E3E3E3;
+}
