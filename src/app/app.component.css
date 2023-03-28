@@ -21,11 +21,11 @@
 
 .nav-link {
     font-family: "Anton", sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: var(--color-secondary);
-    line-height: 0.9em; /* increase/decrease line-height proportionally to the font size */
+    line-height: 0.95em; /* increase/decrease line-height proportionally to the font size */
     background-color: var(--bg-nav-button);
-    padding: 0.7em 0.3em 0.7em 0.3em;
+    padding: 0.7em 0.3em 0.6em 0.3em;
     border-radius: 5px;
     box-shadow: 0px 1px 6px 4px rgba(50, 50, 50, 0.11);
     /* make text display vertically */
