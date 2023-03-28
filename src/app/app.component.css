@@ -8,3 +8,16 @@
     padding: 0;
     list-style-type: none;
 }
+
+.nav-link {
+    font-family: "Anton", sans-serif;
+    font-size: 1.2rem;
+    color: var(--color-secondary);
+    letter-spacing: -0.7rem;
+    background-color: var(--bg-nav-button);
+    border: solid 1px red;
+    margin: 1rem;
+    /* make text display vertically */
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
