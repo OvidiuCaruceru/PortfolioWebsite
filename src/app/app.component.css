@@ -1,7 +1,10 @@
 .main-container {
     background-color: var(--bg-color);
-    min-height: 100vh;
+    min-height: calc(100vh - var(--padding-top-main-container));
     position: relative;
+    padding-top: var(--padding-top-main-container);
+    padding-right: var(--padding-right-main-container);
+    padding-left: var(--padding-left-main-container);
 }
 
 .background-name-last,
@@ -26,9 +29,9 @@
 }
 
 .nav-bar {
-    position: absolute;
+    position: fixed;
     top: 50%;
-    left: 75%;
+    right: calc(var(--padding-right-main-container) - 3rem);
     transform: translate(-50%, -50%);
 }
 
