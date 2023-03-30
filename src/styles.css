@@ -3,6 +3,7 @@
 
 /* styling variables */
 :root {
+    /* colors */
     --bg-color: #D8D8D8;
     --bg-nav-button: #F2F2F2;
     --bg-text: #E3E3E3;
@@ -14,5 +15,8 @@
     --text-light: #FCFCFC;
     --separator-card-inner: #AFAFAF;
     --fill-card: rgba(219, 219, 219, 8%);
-    --padding-main-container-top: 20%;
+    /* paddings */
+    --padding-top-main-container: 10vh;
+    --padding-right-main-container: 20%;
+    --padding-left-main-container: 20%;
 }
