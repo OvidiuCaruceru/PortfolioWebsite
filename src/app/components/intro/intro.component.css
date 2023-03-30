@@ -1,0 +1,17 @@
+.intro-container {
+    background-color: var(--fill-card);
+    backdrop-filter: blur(9px);
+    box-shadow: var(--shadow-card);
+    border-radius: 4px;
+    padding: 1rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    color: var(--text-dark);
+    text-shadow: var(--shadow-text);
+    letter-spacing: -0.01em;
+}
+
+.title {
+    font-size: 4rem;
+    margin: 0;
+}
