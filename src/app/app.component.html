@@ -1,16 +1,11 @@
 <div class="main-container">
     <div>
-        <span class="background-name-last">Căruceru</span>
-        <span class="background-name-first">Ovidiu</span>
+        <div class="background-name-last">Căruceru</div>
+        <div class="background-name-first">Ovidiu</div>
     </div>
-    <nav class="nav-bar-container">
-        <ul class="nav-bar-buttons">
-            <li><a class="nav-link" routerLink="/Intro" routerLinkActive="nav-link-selected">INTRO</a></li>
-            <li><a class="nav-link" routerLink="/Skills" routerLinkActive="nav-link-selected">SKILLS</a></li>
-            <li><a class="nav-link" routerLink="/Projects" routerLinkActive="nav-link-selected">PROJECTS</a></li>
-            <li><a class="nav-link" routerLink="/Contact" routerLinkActive="nav-link-selected">CONTACT</a></li>
-        </ul>
-    </nav>
+    <div class="nav-bar-container">
+        <navbar></navbar>
+    </div>
     <div class="component-container">
         <router-outlet></router-outlet>
     </div>
