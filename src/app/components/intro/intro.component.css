@@ -1,9 +1,12 @@
 .intro-container {
     background-color: var(--fill-card);
-    backdrop-filter: blur(9px);
+    backdrop-filter: blur(6px);
     box-shadow: var(--shadow-card);
     border-radius: 4px;
-    padding: 1rem;
+    padding-top: var(--padding-top-intro-container);
+    padding-right: var(--padding-right-intro-container);
+    padding-bottom: var(--padding-bottom-intro-container);
+    padding-left: var(--padding-left-intro-container);
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 700;
     color: var(--text-dark);
@@ -11,7 +14,35 @@
     letter-spacing: -0.01em;
 }
 
+.title-container {
+    padding: rem 0;
+}
+
+
 .title {
-    font-size: 4rem;
+    font-size: 3rem;
     margin: 0;
+    line-height: 1.1em;
+    padding: 0.9rem 0;
+}
+
+.separator {
+    width: 90%;
+    height: 2px;
+    background-color: var(--separator-card-inner);
+    margin: 1.8rem auto;
+    border: none;
+}
+
+.subtitle {
+    font-size: 1.8rem;
+}
+
+.trait {
+    font-size: 1.5rem;
+    margin: 1.2rem 0;
+}
+
+.background-text {
+    position: absolute;
 }
