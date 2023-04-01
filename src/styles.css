@@ -17,12 +17,18 @@
     --color-secondary-dim: #C7C0CD;
     --text-dark: #545454;
     --text-light: #FCFCFC;
-    --separator-card-inner: #AFAFAF;
+    --separator-card-inner: #c0c0c0;
     --fill-card: rgba(219, 219, 219, 8%);
-    /* paddings */
+
+    /* paddings mobile */
     --padding-top-main-container: 10vh;
-    --padding-right-main-container: 20%;
-    --padding-left-main-container: 20%;
+    --padding-right-main-container: 8%;
+    --padding-left-main-container: 2.5%;
+    --padding-top-intro-container: 1rem;
+    --padding-right-intro-container: 0.5rem;
+    --padding-bottom-intro-container: 1rem;
+    --padding-left-intro-container: 1rem;
+    
     /* shadows */
     --shadow-card: 0px 1px 6px 0px rgba(0, 0, 0, 0.16);
     --shadow-text: 0px 1px 3px rgba(0, 0, 0, 0.26);
