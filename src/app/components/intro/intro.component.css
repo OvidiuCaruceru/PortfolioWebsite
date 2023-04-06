@@ -43,6 +43,14 @@
     margin: 1.2rem 0;
 }
 
-.background-text {
+/* .background-text {
+    font-family: 'League Gothic', sans-serif;
+    font-size: 10rem;
+    color: var(--bg-text);
+    text-shadow: none;
     position: absolute;
-}
+    font-weight: normal;
+    letter-spacing: -0.2rem;
+    bottom: 0;
+    transform: rotate(-90deg);
+} */
