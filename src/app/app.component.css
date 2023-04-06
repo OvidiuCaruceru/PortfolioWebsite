@@ -4,6 +4,7 @@
     padding-top: var(--padding-top-main-container);
     padding-right: var(--padding-right-main-container);
     padding-left: var(--padding-left-main-container);
+
 }
 
 .background-name-last,
@@ -12,7 +13,7 @@
     font-size: 25vw;
     position: absolute;
     letter-spacing: -0.03em;
-    transform: translate(-0.03em, -0.04em); /* eliminate the white space from left and top of text in order to align to the edges of the page */
+    transform: translateY(-0.025em); /* eliminate the white space from left and top of text in order to align to the edges of the page */
     user-select: none;
 }
 
@@ -51,3 +52,20 @@
     /* right: calc(var(--padding-right-main-container) - 4rem); */
     transform: translateY(-50%);
 }
+
+/* .background-title {
+    margin: 0;
+    padding: 0;
+    font-family: 'League Gothic', sans-serif;
+    font-size: 10rem;
+    color: var(--bg-text);
+    text-shadow: none;
+    font-weight: normal;
+    letter-spacing: -0.2rem;
+    line-height: -2rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    user-select: none;
+    background-color: red;
+} */
