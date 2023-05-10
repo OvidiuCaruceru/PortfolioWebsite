@@ -1,11 +1,11 @@
 <div class="main-container">
-    <div>
-        <div class="background-name-last">Căruceru</div>
-        <div class="background-name-first">Ovidiu</div>
-        <div class="background-title">{{ activeComponentName }}</div>
-    </div>
+    <div class="background-name-last">Căruceru</div>
+    <div class="background-name-first">Ovidiu</div>
+    <div class="background-title">{{ activeComponentName }}</div>
     <div class="nav-bar-container">
         <navbar></navbar>
     </div>
-    <router-outlet></router-outlet>
+    <div class="content-wrapper">
+        <router-outlet></router-outlet>
+    </div>
 </div>
