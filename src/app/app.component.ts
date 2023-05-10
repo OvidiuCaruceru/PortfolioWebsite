@@ -1,21 +1,27 @@
-import { Component } from '@angular/core';
-import { NavigationEnd, Router } from '@angular/router';
+import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
+import { ComponentNameService } from './services/component-name.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
+  
   title = 'Căruceru Ovidiu';
 
-  activePath: string = '';
+  activeComponentName = '';
 
-  constructor(private router: Router) {
-    this.router.events.subscribe((event) => {
-      if (event instanceof NavigationEnd) {
-        this.activePath = event.url.split('/')[1];
-      }
-    })
+  constructor(
+    private componentNameService: ComponentNameService,
+    private cdRef: ChangeDetectorRef // Angular is detecting a change in the value of componentName that has occurred after the view has been checked, and is throwing an error without this additional change detection
+    ) { }
+
+  ngOnInit() {
+    this.componentNameService.activeComponentName.subscribe(componentName => {
+      this.activeComponentName = componentName;
+      this.cdRef.detectChanges();
+    });
   }
+
 }
