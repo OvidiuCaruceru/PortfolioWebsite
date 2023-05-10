@@ -1,10 +1,7 @@
 .main-container {
+    position: relative;
     background-color: var(--bg-color);
-    min-height: calc(100vh - var(--padding-top-main-container));
-    padding-top: var(--padding-top-main-container);
-    padding-right: var(--padding-right-main-container);
-    padding-left: var(--padding-left-main-container);
-
+    height: 100vh;
 }
 
 .background-name-last,
@@ -53,7 +50,7 @@
     transform: translateY(-50%);
 }
 
-/* .background-title {
+.background-title {
     margin: 0;
     padding: 0;
     font-family: 'League Gothic', sans-serif;
@@ -62,10 +59,17 @@
     text-shadow: none;
     font-weight: normal;
     letter-spacing: -0.2rem;
-    line-height: -2rem;
+    line-height: 0.75; /*make the container the same height as the font*/
     position: absolute;
     bottom: 0;
     right: 0;
     user-select: none;
     background-color: red;
-} */
+    overflow: hidden; /*remove the white space that was overflowing outside the root element*/
+}
+
+.content-wrapper {
+    padding-top: var(--padding-top-main-container);
+    padding-right: var(--padding-right-main-container);
+    padding-left: var(--padding-left-main-container);
+}
