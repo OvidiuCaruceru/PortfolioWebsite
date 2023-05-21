@@ -1,1 +1,18 @@
-<p>projects works!</p>
+<div class="projects-container">
+    <div class="project" *ngFor = 'let project of projects'>
+        <div class="card card-project">
+            <h3 class="title">{{ project.title }}</h3>
+            <hr class="separator separator-projects">
+            <div class="icons">
+                <button *ngIf="showDetails" (click) = toggleDetails() class="icon icon-close" aria-label="close"></button>
+                <button *ngIf="!showDetails" (click) = toggleDetails() class="icon icon-info" aria-label="info"></button>
+                <a [href]="project.website" class="icon icon-website" aria-label="website" target="_blank"></a>
+                <a [href]="project.github" class="icon icon-github" aria-label="github" target="_blank"></a>
+                <a [href]="project.figma" class="icon icon-figma" aria-label="figma" target="_blank"></a>
+            </div>
+        </div>
+        <div *ngIf="showDetails" class="card card-description">
+            <p class="text-description" *ngFor="let line of project.description">{{ line }}</p>
+        </div>
+    </div>
+</div>
