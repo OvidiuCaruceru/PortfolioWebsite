@@ -1,18 +1,19 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs/internal/BehaviorSubject';
+import { Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ComponentNameService {
 
-  private componentName = new BehaviorSubject<string>('');
+  private componentName = new Subject<string>();
 
   get activeComponentName() {
-    return this.componentName.asObservable(); // since we want to expose the read-only nature of the componentName observable to consumers, we use the asObservable() method to hide the next() method and expose only the subscribe() method. This way, consumers can only receive the values emitted by the componentName observable, but cannot emit their own values.
+    return this.componentName.asObservable(); // hide the next() method and expose only the subscribe() method so consumers can only receive the values emitted by the componentName observable, but cannot emit their own values.
   }
 
   updateComponentName(name: string) {
     this.componentName.next(name);
   }
+
 }
