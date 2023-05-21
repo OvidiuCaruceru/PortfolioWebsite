@@ -3,13 +3,14 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* styling variables */
 :root {
     /* colors */
     --bg-color: #D8D8D8;
-    --bg-nav-button: #F2F2F2;
+    --bg-button: #F2F2F2;
     --bg-text: #E3E3E3;
     --color-primary: #4F6B6F;
     --color-primary-dim: #B7C2C3;
@@ -18,7 +19,7 @@
     --text-dark: #545454;
     --text-light: #FCFCFC;
     --separator-card-inner: #c0c0c0;
-    --fill-card: rgba(219, 219, 219, 8%);
+    --fill-card: rgba(255, 255, 255, 0.13);
 
     /* paddings mobile */
     --padding-top-main-container: 10vh;
@@ -30,8 +31,24 @@
     --padding-left-intro-container: 1rem;
     
     /* shadows */
-    --shadow-card: 0px 1px 6px 0px rgba(0, 0, 0, 0.16);
+    --shadow-card: 0px 1px 4px 1px rgba(0, 0, 0, 0.16);
     --shadow-text: 0px 1px 3px rgba(0, 0, 0, 0.26);
-    --shadow-nav-button: 0px 1px 6px 4px rgba(50, 50, 50, 0.14);
+    --shadow-text-sm: 0px 1px 2px rgba(0, 0, 0, 0.26);
+    --shadow-nav-button: 0px 1px 6px 3px rgba(50, 50, 50, 0.18);
     --shadow-nav-button-selected: 1px 1px 2px 0px rgba(50, 50, 50, 0.31);
+}
+
+.card {
+    background-color: var(--fill-card);
+    backdrop-filter: blur(6px);
+    box-shadow: var(--shadow-card);
+    border-radius: 4px;
+}
+
+.separator {
+    width: 90%;
+    height: 2px;
+    background-color: var(--separator-card-inner);
+    margin: 1.8rem auto;
+    border: none;
 }
