@@ -1,12 +1,8 @@
 .intro-container {
-    background-color: var(--fill-card);
-    backdrop-filter: blur(6px);
-    box-shadow: var(--shadow-card);
-    border-radius: 4px;
-    padding-top: var(--padding-top-intro-container);
-    padding-right: var(--padding-right-intro-container);
-    padding-bottom: var(--padding-bottom-intro-container);
-    padding-left: var(--padding-left-intro-container);
+    padding-top: 1rem;
+    padding-right: 0.5rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 700;
     color: var(--text-dark);
@@ -26,14 +22,6 @@
     padding: 0.9rem 0;
 }
 
-.separator {
-    width: 90%;
-    height: 2px;
-    background-color: var(--separator-card-inner);
-    margin: 1.8rem auto;
-    border: none;
-}
-
 .subtitle {
     font-size: 1.8rem;
 }
@@ -42,15 +30,3 @@
     font-size: 1.5rem;
     margin: 1.2rem 0;
 }
-
-/* .background-text {
-    font-family: 'League Gothic', sans-serif;
-    font-size: 10rem;
-    color: var(--bg-text);
-    text-shadow: none;
-    position: absolute;
-    font-weight: normal;
-    letter-spacing: -0.2rem;
-    bottom: 0;
-    transform: rotate(-90deg);
-} */
