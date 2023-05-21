@@ -1,0 +1,14 @@
+.skills-container {
+    padding: 2rem;
+    font-family: Anton, sans-serif;
+    color: var(--text-dark);
+    font-size: 3rem;
+    line-height: 1.25;
+    letter-spacing: -0.05rem;
+    text-shadow: var(--shadow-text);
+}
+
+.skill {
+    list-style-type: none;
+
+}
