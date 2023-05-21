@@ -1,7 +1,7 @@
 .main-container {
     position: relative;
     background-color: var(--bg-color);
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .background-name-last,
@@ -51,21 +51,17 @@
 }
 
 .background-title {
-    margin: 0;
-    padding: 0;
-    font-family: 'League Gothic', sans-serif;
-    font-size: 10rem;
-    color: var(--bg-text);
-    text-shadow: none;
-    font-weight: normal;
-    letter-spacing: -0.2rem;
-    line-height: 0.75; /*make the container the same height as the font*/
     position: absolute;
     bottom: 0;
     right: 0;
+    font-family: 'League Gothic', sans-serif;
+    letter-spacing: -0.2rem;
+    line-height: 0.73; /* magic number to remove the whitespace below the text in order to align relative to the right edge  */
     user-select: none;
-    background-color: red;
+    color: var(--bg-text);
     overflow: hidden; /*remove the white space that was overflowing outside the root element*/
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg);
 }
 
 .content-wrapper {
