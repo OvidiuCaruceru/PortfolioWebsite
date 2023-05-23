@@ -2,10 +2,6 @@
     position: relative;
     background-color: var(--bg-color);
     min-height: 100vh;
-    /*make the child component center vertically*/
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .background-name-last,
@@ -69,6 +65,7 @@
 }
 
 .content-wrapper {
+    padding-top: var(--padding-top-main-container);
     padding-right: var(--padding-right-main-container);
     padding-left: var(--padding-left-main-container);
     padding-bottom: 5vh;
