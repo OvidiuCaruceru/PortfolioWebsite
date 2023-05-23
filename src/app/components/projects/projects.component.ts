@@ -11,7 +11,6 @@ import { projects } from 'src/app/data/projects-data';
 export class ProjectsComponent implements OnInit {
 
   componentName = 'Projects';
-  showDetails = true;
   projects: Project[] = projects;
 
   constructor(private componentNameService: ComponentNameService) { }
@@ -20,8 +19,8 @@ export class ProjectsComponent implements OnInit {
     this.componentNameService.updateComponentName(this.componentName);
   }
 
-  toggleDetails () {
-    this.showDetails = !this.showDetails;
+  toggleDetails(project: Project) {
+    project.isActive = !project.isActive;
   }
 
 }
