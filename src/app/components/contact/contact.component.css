@@ -1,0 +1,61 @@
+.card-contact {
+    width: 100%;
+    padding: 0.1rem 1rem;
+    font-family: Anton, sans-serif;
+    color: var(--text-dark);
+}
+
+.card-contact-details {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0;
+}
+
+.email,
+.phone-number {
+    width: 100%;
+    text-align: center;
+}
+
+.email {
+    font-size: 1.25rem;
+}
+
+.phone-number {
+    font-size: 2rem;
+}
+
+.icon-contact {
+    width: 2.5rem;
+}
+
+.links {
+    position: relative;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+}
+
+.link {
+    background-size: contain;
+    background-color: var(--bg-button);
+    width: 4.5rem;
+    height: 4.5rem;
+    box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 50%;
+    margin: 0.5rem;
+}
+
+.link-linkedin {
+    background-image: url(../../../assets/images/IconLinkedin.svg);
+}
+
+.link-github {
+    background-image: url(../../../assets/images/IconGithub.svg);
+}
+
+.link-figma {
+    background-image: url(../../../assets/images/IconFigma.svg);
+}
