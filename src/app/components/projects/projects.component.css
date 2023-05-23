@@ -2,6 +2,8 @@
     width: 100%;
     font-family: 'Barlow Condensed', sans-serif;
     color: var(--text-dark);
+    padding-bottom: 1rem;
+
 }
 
 .card-project {
@@ -13,6 +15,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 2rem;
 }
 
 .title {
@@ -20,6 +23,7 @@
     text-align: center;
     letter-spacing: -0.05rem;
     text-shadow: var(--shadow-text);
+    font-weight: 700;
 }
 
 .separator-projects {
@@ -45,6 +49,13 @@ button {
     height: 4rem;
     box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.24);
     border-radius: 50%;
+    cursor: pointer;
+}
+
+.icon-disabled {
+    cursor: not-allowed;
+    background-color: transparent;
+    box-shadow: none;
 }
 
 .icon-close {
@@ -72,10 +83,22 @@ button {
 }
 
 .text-description {
+    color: var(--text-darker);
     margin-bottom: 0.5em;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 1.3rem;
     text-shadow: var(--shadow-text-sm);
+}
+
+.text-description-warning {
+    text-align: center;
+    background-color: rgb(233, 162, 56);
+    border-radius: 2px;
+    text-transform: uppercase;
+    color: rgb(59, 59, 59);
+    text-shadow: none;
+    padding: 0.2rem 0;
+    font-weight: 600;
 }
 
 
