@@ -3,5 +3,10 @@ export interface Project {
     website: string;
     github: string;
     figma: string;
-    description: string[];
+    description: {
+        text: string
+        hasSpecialStyling: boolean;
+        }[];
+    isActive: boolean;
+    isFinished: boolean;
 }
