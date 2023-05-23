@@ -2,6 +2,7 @@
     position: relative;
     background-color: var(--bg-color);
     min-height: 100vh;
+    overflow: hidden; /* prevent .background-title from overflowing due to the content's forst letter being aligned to the bottom*/
 }
 
 .background-name-last,
@@ -26,21 +27,6 @@
     right: 0;
 }
 
-/* desktop */
-/* .background-name-last {
-    color: var(--color-primary-dim);
-    top: 0;
-    right: auto;
-    left: 0;
-} */
-
-/* desktop */
-/* .background-name-first {
-    color: var(--color-secondary-dim);
-    top: 0.2em;
-    left: 3.35em;
-} */
-
 .nav-bar-container {
     position: fixed;
     top: 50%;
@@ -59,9 +45,8 @@
     line-height: 0.73; /* magic number to remove the whitespace below the text in order to align relative to the right edge  */
     user-select: none;
     color: var(--bg-text);
-    overflow: hidden; /*remove the white space that was overflowing outside the root element*/
     writing-mode: vertical-lr;
-    transform: rotate(-180deg);
+    transform: rotate(-180deg) translateY(-0.045em);
 }
 
 .content-wrapper {
@@ -69,4 +54,28 @@
     padding-right: var(--padding-right-main-container);
     padding-left: var(--padding-left-main-container);
     padding-bottom: 5vh;
+}
+
+@media (min-width: 550px) {
+
+    .background-name-last,
+    .background-name-first {
+        font-size: 15vw;
+        transform: translate(-0.025em, -0.025em); /* eliminate the white space from left and top of text in order to align to the edges of the page */
+    }
+
+    .background-name-last {
+        top: 0;
+        left: 0;
+    }
+
+    .background-name-first {
+        top: 0.2em;
+        left: 3.35em;
+    }
+
+    .background-title {
+        writing-mode: unset;
+        transform: unset;
+    }
 }
