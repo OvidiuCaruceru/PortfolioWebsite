@@ -11,7 +11,7 @@
     box-sizing: content-box;
     text-decoration: none;
     font-family: "Anton", sans-serif;
-    font-size: 2.7vh;
+    font-size: min(2.7vh, 1.4rem);
     color: var(--color-secondary);
     line-height: 0.95em; /* increase/decrease line-height proportionally to the font size */
     background-color: var(--bg-button);
@@ -29,6 +29,18 @@
     color: var(--text-light);
     background-color: var(--color-primary);
     box-shadow: var(--shadow-nav-button-selected);
-    /* desktop */
-    /* scale: 0.92; */
+    scale: 0.92;
+}
+
+
+@media (min-width: 550px) {
+    .nav-link {
+        border-radius: 7px 7px 7px 7px;
+    }
+}
+
+@media (min-width: 700px) {
+    .nav-link-selected {
+        scale: 0.92;
+    }
 }

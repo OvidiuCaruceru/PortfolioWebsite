@@ -11,7 +11,7 @@
     font-size: 25vw;
     position: absolute;
     letter-spacing: -0.03em;
-    transform: translateY(-0.025em); /* eliminate the white space from left and top of text in order to align to the edges of the page */
+    transform: translate(-0.025em); /* eliminate the white space from left and top of text in order to align to the edges of the page */
     user-select: none;
 }
 
@@ -31,22 +31,17 @@
     position: fixed;
     top: 50%;
     right: 0;
-    /* desktop */
-    /* right: calc(var(--padding-right-main-container) - 4rem); */
     transform: translateY(-50%);
 }
 
 .background-title {
+    opacity: 0.5;
     position: absolute;
     bottom: 0;
-    right: 0;
-    font-family: 'League Gothic', sans-serif;
-    letter-spacing: -0.2rem;
-    line-height: 0.73; /* magic number to remove the whitespace below the text in order to align relative to the right edge  */
-    user-select: none;
-    color: var(--bg-text);
-    writing-mode: vertical-lr;
-    transform: rotate(-180deg) translateY(-0.045em);
+    left: 100%;
+    transform-origin: bottom left;
+    transform: rotate(-90deg) translateX(-0.1rem);
+    width: 80vh;
 }
 
 .content-wrapper {
@@ -57,7 +52,6 @@
 }
 
 @media (min-width: 550px) {
-
     .background-name-last,
     .background-name-first {
         font-size: 15vw;
@@ -75,7 +69,42 @@
     }
 
     .background-title {
-        writing-mode: unset;
-        transform: unset;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 75%;
+    }
+
+    .nav-bar-container {
+        right: calc(var(--padding-right-main-container) - 4rem);
+    }
+}
+
+@media (min-width: 700px) {
+    .background-title {
+        width: 65%;
+    }
+}
+
+@media (min-width: 1200px) {
+    :root {
+        --padding-top-main-container: 20vh;
+        --padding-right-main-container: 22%;
+        --padding-left-main-container: 22%;
+    }
+
+    .nav-bar-container {
+        right: calc(var(--padding-right-main-container) - 10vw);
+    }
+
+    .background-title {
+        width: 45%;
+    }
+}
+
+@media (min-width: 1700px) {
+    :root {
+        --padding-top-main-container: 22vh;
+        --padding-right-main-container: 25%;
+        --padding-left-main-container: 25%;
     }
 }
