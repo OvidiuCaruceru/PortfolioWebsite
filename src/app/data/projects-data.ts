@@ -20,7 +20,7 @@ export const projects: Project[] = [
         hasSpecialStyling: false
       },
       {
-        text: 'Highlights: Angular app built from scratch, routing, data binding, service, observable.',
+        text: 'Highlights: Responsive layout, routing, data binding, service, observable.',
         hasSpecialStyling: false
       },
     ],

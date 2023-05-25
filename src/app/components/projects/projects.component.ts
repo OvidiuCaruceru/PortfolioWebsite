@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ComponentNameService } from 'src/app/services/component-name.service';
+import { ComponentDataService } from 'src/app/services/component-data.service';
 import { Project } from '../../models/project.model'
 import { projects } from 'src/app/data/projects-data';
 
@@ -10,13 +10,13 @@ import { projects } from 'src/app/data/projects-data';
 })
 export class ProjectsComponent implements OnInit {
 
-  componentName = 'Projects';
+  componentImageUrl = '../assets/images/projects.svg';
   projects: Project[] = projects;
 
-  constructor(private componentNameService: ComponentNameService) { }
+  constructor(private componentDataService: ComponentDataService) { }
 
   ngOnInit() {
-    this.componentNameService.updateComponentName(this.componentName);
+    this.componentDataService.updateComponentImageUrl(this.componentImageUrl);
   }
 
   toggleDetails(project: Project) {

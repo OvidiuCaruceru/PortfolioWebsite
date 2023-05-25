@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ComponentNameService } from 'src/app/services/component-name.service';
+import { ComponentDataService } from 'src/app/services/component-data.service';
 
 @Component({
   selector: 'app-contact',
@@ -8,11 +8,11 @@ import { ComponentNameService } from 'src/app/services/component-name.service';
 })
 export class ContactComponent implements OnInit {
 
-  componentName = 'Contact';
+  componentImageUrl = '../assets/images/contact.svg';
 
-  constructor(private componentNameService: ComponentNameService) { }
+  constructor(private componentDataService: ComponentDataService) { }
 
   ngOnInit() {
-    this.componentNameService.updateComponentName(this.componentName);
+    this.componentDataService.updateComponentImageUrl(this.componentImageUrl);
   }
 }
