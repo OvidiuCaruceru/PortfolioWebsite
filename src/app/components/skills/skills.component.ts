@@ -8,7 +8,7 @@ import { ComponentDataService } from 'src/app/services/component-data.service';
 })
 export class SkillsComponent implements OnInit {
   
-  componentImageUrl = '../../assets/images/skills.svg';
+  componentImageUrl = 'assets/images/skills.svg';
 
   constructor(private componentDataService: ComponentDataService) { }
 
