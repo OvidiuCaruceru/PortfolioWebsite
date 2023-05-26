@@ -23,6 +23,11 @@
     text-align: center;
     width: 1ch;
     word-break: break-all;
+    transition: transform 0.1s ease;
+}
+
+.nav-link:not(.nav-link-selected):hover {
+    transform: scale(1.1);
 }
 
 .nav-link-selected {
