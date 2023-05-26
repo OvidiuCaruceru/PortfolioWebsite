@@ -63,6 +63,9 @@
 }
 
 @media (min-width: 700px) {
+    .card {
+        backdrop-filter: blur(9px);
+    }
     :root {
         --padding-top-main-container: 15vh;
         --padding-right-main-container: 17%;
