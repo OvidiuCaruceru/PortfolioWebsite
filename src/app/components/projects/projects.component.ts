@@ -10,7 +10,7 @@ import { projects } from 'src/app/data/projects-data';
 })
 export class ProjectsComponent implements OnInit {
 
-  componentImageUrl = '../assets/images/projects.svg';
+  componentImageUrl = 'assets/images/projects.svg';
   projects: Project[] = projects;
   isBigScreen!: boolean;
 
