@@ -52,6 +52,30 @@
     padding-bottom: 5vh;
 }
 
+.download-button {
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    text-decoration: none;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--bg-button);
+    background-color: #8947bbb0;
+    padding: 0.8rem 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0px 1px 8px 4px rgba(0, 0, 0, 0.22);
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    transform-origin: center left;
+}
+
+.download-button:hover {
+    background-color: #9003fc;
+    transform: scale(1.1) translateX(-50%);
+}
+
 @media (min-width: 550px) {
     .background-name-last,
     .background-name-first {
@@ -78,11 +102,19 @@
     .nav-bar-container {
         right: calc(var(--padding-right-main-container) - 4rem);
     }
+
+    .download-button {
+        font-size: 1.5rem;
+    }
 }
 
 @media (min-width: 700px) {
     .background-title {
         width: 65%;
+    }
+
+    .download-button {
+        font-size: 1.6rem;
     }
 }
 
@@ -100,6 +132,11 @@
     .background-title {
         width: 60%;
     }
+
+    .download-button {
+        bottom: 6%;
+        font-size: 2rem;
+    }
 }
 
 @media (min-width: 1700px) {
@@ -107,5 +144,9 @@
         --padding-top-main-container: 22vh;
         --padding-right-main-container: 25%;
         --padding-left-main-container: 25%;
+    }
+
+    .download-button {
+        bottom: 10%;
     }
 }
