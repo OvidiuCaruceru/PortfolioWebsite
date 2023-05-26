@@ -16,7 +16,7 @@ export const projects: Project[] = [
         hasSpecialStyling: false
       },
       {
-        text: 'Demonstrating my ability to transpose a design to functional code.',
+        text: 'Demonstrating my ability to transpose design to functional code.',
         hasSpecialStyling: false
       },
       {
