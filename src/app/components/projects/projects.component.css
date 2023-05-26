@@ -1,0 +1,165 @@
+.projects-container {
+    width: 100%;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: var(--text-dark);
+    padding-bottom: 1rem;
+    
+}
+
+.card-project {
+    width: 100%;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto 2rem auto;
+}
+
+.title {
+    font-size: 2.2rem;
+    text-align: center;
+    letter-spacing: -0.05rem;
+    text-shadow: var(--shadow-text);
+    font-weight: 700;
+    padding: 1rem;
+}
+
+.separator-projects {
+    background-color: #adadad;
+    height: 1px;
+}
+
+button {
+    all: unset;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.icon {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: var(--bg-button);
+    width: 4rem;
+    height: 4rem;
+    box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.icon-disabled {
+    cursor: not-allowed;
+    background-color: transparent;
+    box-shadow: none;
+    opacity: 0.7;
+}
+
+.icon-close {
+    background-image: url(../../../assets/images/IconClose.svg);
+}
+.icon-info {
+    background-image: url(../../../assets/images/IconInfo.svg);
+}
+.icon-website {
+    background-image: url(../../../assets/images/IconWebsite.svg);
+}
+.icon-github {
+    background-image: url(../../../assets/images/IconGithub.svg);
+}
+.icon-figma {
+    background-image: url(../../../assets/images/IconFigma.svg);
+}
+
+.card-description { 
+    margin-top: 2px;
+    width: 97%;
+    padding: 0.7rem 0.8rem 0.4rem 0.8rem;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.16);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.text-description {
+    color: var(--text-darker);
+    margin-bottom: 0.5em;
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-shadow: var(--shadow-text-sm);
+}
+
+.text-description-warning {
+    text-align: center;
+    background-color: rgb(233, 162, 56);
+    border-radius: 2px;
+    text-transform: uppercase;
+    color: rgb(59, 59, 59);
+    text-shadow: none;
+    padding: 0.2rem 0;
+    font-weight: 600;
+}
+
+@media (min-width: 550px) {
+    .icon-close,
+    .icon-info {
+      display: none;
+    }
+
+    .icons {
+        padding: 1rem 4rem;
+    }
+
+    .card-description {
+        padding: 1rem 1.5rem 1rem 1.5rem;
+    }
+}
+
+@media (min-width: 800px) {
+    .icons {
+        padding: 0 1rem 0 0;
+        /*make the element fixed width and alinged to the right*/
+        flex: 0 0 15rem;
+        margin-left: auto;
+    }
+
+    .card-project {
+        display: flex;
+        align-items: center;
+    }
+
+    .separator-projects {
+        display: none;
+    }
+
+    .title {
+        font-size: 2.6rem;
+        padding: 1.5rem 1rem 1.5rem 3rem;
+        text-align: unset;
+    }
+
+    .card-description { 
+        padding: 1.5rem 2rem 1.5rem 2rem;
+    }
+
+    .text-description {
+        font-size: 1.45rem;
+        color: var(--text-dark);
+        margin-bottom: 0.6em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .project {
+        margin: 0 auto 3.5rem auto;
+    }
+}
+
+@media (min-width: 1700px) {
+    .project {
+        max-width: 58rem;
+    }
+}
+

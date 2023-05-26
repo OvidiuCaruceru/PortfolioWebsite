@@ -1,0 +1,137 @@
+.card-contact {
+    width: 100%;
+    padding: 0.1rem 1rem;
+    font-family: Anton, sans-serif;
+    color: var(--text-dark);
+    margin: 0 auto;
+}
+
+.card-contact-details {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0;
+}
+
+.email,
+.phone-number {
+    width: 100%;
+    text-align: center;
+}
+
+.email {
+    font-size: 1.25rem;
+}
+
+.phone-number {
+    font-size: 2rem;
+}
+
+.icon-contact {
+    width: 2.5rem;
+}
+
+.links {
+    position: relative;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+}
+
+.link {
+    background-size: contain;
+    background-color: var(--bg-button);
+    width: 4.5rem;
+    height: 4.5rem;
+    box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 50%;
+    margin: 0.5rem;
+}
+
+.link-linkedin {
+    background-image: url(../../../assets/images/IconLinkedin.svg);
+}
+
+.link-github {
+    background-image: url(../../../assets/images/IconGithub.svg);
+}
+
+.link-figma {
+    background-image: url(../../../assets/images/IconFigma.svg);
+}
+
+@media (min-width: 550px) {
+    .email {
+        font-size: 1.5rem;
+    }
+    
+    .phone-number {
+        font-size: 2rem;
+    }
+
+    .links {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 4rem;
+    }
+}
+
+@media (min-width: 700px) {
+    .card-contact {
+        padding: 1rem 2rem;
+    }
+
+    .icon-contact {
+        width: 3.5rem;
+    }
+
+    .email {
+        font-size: 1.8rem;
+    }
+    
+    .phone-number {
+        font-size: 2.2rem;
+    }
+
+    .email,
+    .phone-number {
+        text-align: left;
+        padding-left: 2rem;
+    }
+
+    .links {
+        padding-top: 6rem;
+    }
+
+    .link {
+        margin: 0 2rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .card-contact {
+        max-width: 60rem;
+        padding: 2rem 3rem;
+
+    }
+
+    .icon-contact {
+        width: 4rem;
+    }
+
+    .email {
+        font-size: 2.5rem;
+    }
+    
+    .phone-number {
+        font-size: 2.8rem;
+    }
+
+    .email,
+    .phone-number {
+        text-align: left;
+        padding-left: 4rem;
+    }
+}

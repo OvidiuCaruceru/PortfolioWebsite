@@ -1,0 +1,51 @@
+.nav-bar-buttons {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.nav-link {
+    box-sizing: content-box;
+    text-decoration: none;
+    font-family: "Anton", sans-serif;
+    font-size: min(2.7vh, 1.4rem);
+    color: var(--color-secondary);
+    line-height: 0.95em; /* increase/decrease line-height proportionally to the font size */
+    background-color: var(--bg-button);
+    padding: 0.7em 0.3em 0.6em 0.3em;
+    border-radius: 7px 0 0 7px;
+    box-shadow: var(--shadow-nav-button);
+    /* make text display vertically */
+    display: block;
+    text-align: center;
+    width: 1ch;
+    word-break: break-all;
+    transition: transform 0.1s ease;
+}
+
+.nav-link:not(.nav-link-selected):hover {
+    transform: scale(1.1);
+}
+
+.nav-link-selected {
+    color: var(--text-light);
+    background-color: var(--color-primary);
+    box-shadow: var(--shadow-nav-button-selected);
+    scale: 0.92;
+}
+
+
+@media (min-width: 550px) {
+    .nav-link {
+        border-radius: 7px 7px 7px 7px;
+    }
+}
+
+@media (min-width: 700px) {
+    .nav-link-selected {
+        scale: 0.92;
+    }
+}

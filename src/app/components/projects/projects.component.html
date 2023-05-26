@@ -1,0 +1,18 @@
+<div class="projects-container">
+    <div class="project" *ngFor = 'let project of projects'>
+        <div class="card card-project">
+            <h3 class="title">{{ project.title }}</h3>
+            <hr class="separator separator-projects">
+            <div class="icons">
+                <button *ngIf="project.isActive" (click) = toggleDetails(project) class="icon icon-close" aria-label="close"></button>
+                <button *ngIf="!project.isActive" (click) = toggleDetails(project) class="icon icon-info" aria-label="info"></button>
+                <a [ngClass]="{'icon-disabled' : !project.isFinished}" [attr.href]="project.isFinished ? project.website : null" class="icon icon-website" aria-label="website" target="_blank"></a>
+                <a [ngClass]="{'icon-disabled' : !project.isFinished}" [attr.href]="project.isFinished ? project.github : null" class="icon icon-github" aria-label="github" target="_blank"></a>
+                <a [ngClass]="{'icon-disabled' : !project.isFinished}" [attr.href]="project.isFinished ? project.figma : null" class="icon icon-figma" aria-label="figma" target="_blank"></a>
+            </div>
+        </div>
+        <div *ngIf="isBigScreen || project.isActive" class="card card-description">
+            <p class="text-description" *ngFor="let line of project.description" [ngClass]="{'text-description-warning' : line.hasSpecialStyling}">{{ line.text }}</p>
+        </div>
+    </div>
+</div>

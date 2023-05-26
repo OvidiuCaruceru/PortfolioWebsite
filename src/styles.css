@@ -1,1 +1,90 @@
-/* You can add global styles to this file, and also import other style files */
+/* resets */
+@import '~normalize.css';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* styling variables */
+:root {
+    /* colors */
+    --bg-color: #D8D8D8;
+    --bg-button: #F2F2F2;
+    --color-primary: #4F6B6F;
+    --color-secondary: #734C90;
+    /* --color-primary-dim: #B7C2C3;
+    --color-secondary-dim: #C7C0CD; */
+    --color-primary-dim: #C8CDCE;
+    --color-secondary-dim: #D1CDD3;
+    --text-dark: #545454;
+    --text-darker: #464646;
+    --text-light: #FCFCFC;
+    --separator-card-inner: #c0c0c0;
+    --fill-card: rgba(255, 255, 255, 0.13);
+
+    /* paddings */
+    --padding-top-main-container: 10vh;
+    --padding-right-main-container: 8%;
+    --padding-left-main-container: 2%;
+    
+    /* shadows */
+    --shadow-card: 0px 1px 4px 1px rgba(0, 0, 0, 0.16);
+    --shadow-text: 0px 1px 3px rgba(0, 0, 0, 0.26);
+    --shadow-text-sm: 0px 1px 3px rgba(0, 0, 0, 0.26);
+    --shadow-nav-button: 0px 1px 6px 3px rgba(50, 50, 50, 0.18);
+    --shadow-nav-button-selected: 1px 1px 2px 0px rgba(50, 50, 50, 0.31);
+}
+
+.card {
+    background-color: var(--fill-card);
+    backdrop-filter: blur(5px);
+    box-shadow: var(--shadow-card);
+    border-radius: 4px;
+}
+
+.separator {
+    width: 90%;
+    height: 2px;
+    background-color: var(--separator-card-inner);
+    border: none;
+    margin: 0 auto;
+}
+
+@media (min-width: 550px) {
+    :root {
+        --color-primary-dim: #cbd0d1;
+        --color-secondary-dim: #d1ccd3;
+        --padding-top-main-container: 15vh;
+        --padding-right-main-container: 12%;
+        --padding-left-main-container: 12%;
+        --shadow-card: 0px 1px 6px 0px rgba(0, 0, 0, 0.16);
+    }
+}
+
+@media (min-width: 700px) {
+    .card {
+        backdrop-filter: blur(9px);
+    }
+    :root {
+        --padding-top-main-container: 15vh;
+        --padding-right-main-container: 17%;
+        --padding-left-main-container: 17%;
+    }
+}
+
+@media (min-width: 1200px) {
+    :root {
+        --padding-top-main-container: 20vh;
+        --padding-right-main-container: 22%;
+        --padding-left-main-container: 22%;
+    }
+}
+
+@media (min-width: 1700px) {
+    :root {
+        --padding-top-main-container: 22vh;
+        --padding-right-main-container: 25%;
+        --padding-left-main-container: 25%;
+    }
+}
