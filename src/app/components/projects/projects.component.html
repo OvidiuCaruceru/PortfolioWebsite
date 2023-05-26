@@ -11,7 +11,7 @@
                 <a [ngClass]="{'icon-disabled' : !project.isFinished}" [attr.href]="project.isFinished ? project.figma : null" class="icon icon-figma" aria-label="figma" target="_blank"></a>
             </div>
         </div>
-        <div *ngIf="project.isActive" class="card card-description">
+        <div *ngIf="isBigScreen || project.isActive" class="card card-description">
             <p class="text-description" *ngFor="let line of project.description" [ngClass]="{'text-description-warning' : line.hasSpecialStyling}">{{ line.text }}</p>
         </div>
     </div>
